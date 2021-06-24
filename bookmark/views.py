@@ -23,6 +23,7 @@ class BookmarkDetailView(DetailView):
 
 class BookmarkListView(ListView):
     model = Bookmark
+    paginate_by = 6
 
 
 class BookmarkCreateView(CreateView):
